@@ -38,197 +38,225 @@
     h1, h2 {
       color: #004080;
     }
-    #about {
-      display:flex; 
-      align-items:center; 
-      gap:20px;
-    }
-    #about img {
-      width:120px; 
-      height:120px; 
-      object-fit:cover; 
-      border-radius:50%;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    hr {
-      border: 0;
-      border-top: 1px solid #eee;
-      margin: 20px 0;
-    }
   </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#work">Work History</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#leadership-involvement">Leadership</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certificates-trainings">Certificates</a></li>
-        <li><a href="#honors-awards">Awards</a></li>
-        <li><a href="#references">References</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="about">
-    <img src="khushi..jpeg" alt="Khushi Nankani" />
-    <div>
-      <h1>Khushi Nankani</h1>
-      <p>
-        I am a Computer Science graduate from Texas Tech University with a minor in Mathematics. My experience spans web development, technical communications, and administrative assistance, where I have applied technical skills in Python, Java, SQL, and web technologies to solve complex problems, along with leadership and collaboration abilities. Currently, I serve as a Transition & Handoff Assistant for Texas Tech University, training an incoming team member with an ADA-recognized disability by adapting onboarding and remote processes for accessibility, while creating detailed workflow documentation to ensure smooth knowledge transfer and operational continuity.
-      </p>
-    </div>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <ul style="list-style-type: none; padding-left: 0;">
-      <li><strong>Bachelor’s in Computer Science, Minor in Mathematics</strong></li>
-      <li>Texas Tech University, Lubbock, Texas</li>
-      <li>May 2025 | GPA: 3.606</li>
-    </ul>
-  </section>
-
-  <section id="work">
-    <h2>Work History</h2>
-
-    <div>
-      <h3>Transition & Handoff Assistant (Remote)</h3>
-      <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
-      May 2025 – Present</p>
-      <ul>
-        <li>Training an incoming team member with an ADA-recognized disability, adapting onboarding materials and remote processes to ensure accessibility and a smooth knowledge transfer.</li>
-        <li>Developing detailed documentation of workflows and key procedures to support seamless transition and long-term operational continuity in a remote setting.</li>
-      </ul>
-    </div>
-    <hr>
-
-    <div>
-      <h3>Web Development & Communications Intern (Hybrid)</h3>
-      <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
-      December 2022 – February 2023</p>
-      <ul>
-        <li>Supported website and communication initiatives, contributing to content updates and team collaboration during internship period.</li>
-      </ul>
-    </div>
-    <hr>
-
-    <div>
-      <h3>Web Content & Communications Student Assistant (Hybrid)</h3>
-      <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
-      March 2023 – May 2025</p>
-      <ul>
-        <li>Managed and updated CECE and WATER Center websites, monitors, and calendars using HTML, PHP, Omni CMS, and TeamUp.</li>
-        <li>Performed administrative tasks and ensured consistent, cross-platform content, showcasing time management and problem-solving.</li>
-        <li>Designed newsletters, graphics, and social media content with Adobe Creative Suite, Canva, and Microsoft Office.</li>
-        <li>Collaborated with diverse teams, demonstrating leadership, creativity, and teamwork.</li>
-      </ul>
-    </div>
-    <hr>
-
-    <div>
-      <h3>Communications & Web Support (Hybrid)</h3>
-      <p><strong>Water and the Environmental Research Center (WATER Center), Texas Tech University</strong><br>
-      June 2024 – May 2025</p>
-      <ul>
-        <li>Managed and updated websites, monitors, and calendars using HTML, PHP, Omni CMS, and TeamUp.</li>
-        <li>Designed newsletters, graphics, and social media content; performed admin tasks and ensured branding consistency across platforms.</li>
-      </ul>
-    </div>
-    <hr>
-
-    <div>
-      <h3>Dining Services Assistant</h3>
-      <p><strong>Sam’s Wall-Gates Dining, Texas Tech University</strong><br>
-      September 2021 – December 2022</p>
-      <ul>
-        <li>Supported 100+ students daily and handled facility operations, demonstrating reliability and responsibility.</li>
-      </ul>
-    </div>
-    <hr>
-
-    <div>
-      <h3>Tech Support Assistant</h3>
-      <p><strong>The Brand Crowd Laptop Service Store</strong><br>
-      Summer 2021</p>
-      <ul>
-        <li>Resolved 70% of customer tech issues, applying strong problem-solving and communication skills.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
+<header>
+  <nav>
     <ul>
-      <li>Online Reading Platform — Developed a web-based platform to facilitate online reading and discussion. Technologies used: React, Node.js, MongoDB.</li>
-      <li>Mental Health Care App — Created a mobile app to provide mental health resources and tracking. Technologies used: Flutter, Firebase.</li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#work">Work History</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#leadership-involvement">Leadership & Involvement</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates-trainings">Certificates & Trainings</a></li>
+      <li><a href="#honors-awards">Honors & Awards</a></li>
+      <li><a href="#references">References</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </section>
+  </nav>
+</header>
+
+<section id="about" style="display:flex; align-items:center; gap:20px;">
+  <img src="khushi..jpeg" alt="Khushi Nankani" 
+       style="width:120px; height:120px; object-fit:cover; border-radius:50%;" />
+  <div>
+    <h1>Khushi Nankani</h1>
+    <p>
+    I am a Computer Science graduate from Texas Tech University with a minor in Mathematics. My experience spans web development, technical communications, and administrative assistance, where I have applied technical skills in Python, Java, SQL, and web technologies to solve complex problems, along with leadership and collaboration abilities. Currently, I serve as a Transition & Handoff Assistant for Texas Tech University, training an incoming team member with an ADA-recognized disability by adapting onboarding and remote processes for accessibility, while creating detailed workflow documentation to ensure smooth knowledge transfer and operational continuity.
+    </p>
+  </div>
+</section>
+
+<section id="contact-snippet" style="margin-top:10px; font-size:0.9em; color:#555;">
+  <p>Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a> | Phone: (806) 283-8872 | LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank" rel="noopener">khushinankani</a></p>
+</section>
+
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>Bachelor’s in Computer Science, Minor in Mathematics</li>
+        <li>Texas Tech University, Lubbock, Texas</li>
+        <li>May 2025 | GPA: 3.606</li>
+      </ul>
+    </section>
+
+<section id="work">
+  <h2>Work History</h2>
+
+  <div>
+    <h3>Transition & Handoff Assistant (Remote)</h3>
+    <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
+    May 2025 – Present</p>
+    <ul>
+      <li>Training an incoming team member with an ADA-recognized disability, adapting onboarding materials and remote processes to ensure accessibility and a smooth knowledge transfer.</li>
+      <li>Developing detailed documentation of workflows and key procedures to support seamless transition and long-term operational continuity in a remote setting.</li>
+    </ul>
+  </div>
+  <hr>
+
+  <div>
+    <h3>Web Development & Communications Intern (Hybrid)</h3>
+    <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
+    December 2022 – February 2023</p>
+    <ul>
+      <li>Supported website and communication initiatives, contributing to content updates and team collaboration during internship period.</li>
+    </ul>
+  </div>
+  <hr>
+
+  <div>
+    <h3>Web Content & Communications Student Assistant (Hybrid)</h3>
+    <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
+    March 2023 – May 2025</p>
+    <ul>
+      <li>Managed and updated CECE and WATER Center websites, monitors, and calendars using HTML, PHP, Omni CMS, and TeamUp.</li>
+      <li>Performed administrative tasks and ensured consistent, cross-platform content, showcasing time management and problem-solving.</li>
+      <li>Designed newsletters, graphics, and social media content with Adobe Creative Suite, Canva, and Microsoft Office.</li>
+      <li>Collaborated with diverse teams, demonstrating leadership, creativity, and teamwork.</li>
+    </ul>
+  </div>
+  <hr>
+
+  <div>
+    <h3>Communications & Web Support (Hybrid)</h3>
+    <p><strong>Water and the Environmental Research Center (WATER Center), Texas Tech University</strong><br>
+    June 2024 – May 2025</p>
+    <ul>
+      <li>Managed and updated websites, monitors, and calendars using HTML, PHP, Omni CMS, and TeamUp.</li>
+      <li>Designed newsletters, graphics, and social media content; performed admin tasks and ensured branding consistency across platforms.</li>
+    </ul>
+  </div>
+  <hr>
+
+  <div>
+    <h3>Dining Services Assistant</h3>
+    <p><strong>Sam’s Wall-Gates Dining, Texas Tech University</strong><br>
+    September 2021 – December 2022</p>
+    <ul>
+      <li>Supported 100+ students daily and handled facility operations, demonstrating reliability and responsibility.</li>
+    </ul>
+  </div>
+  <hr>
+
+  <div>
+    <h3>Tech Support Assistant</h3>
+    <p><strong>The Brand Crowd Laptop Service Store</strong><br>
+    Summer 2021</p>
+    <ul>
+      <li>Resolved 70% of customer tech issues, applying strong problem-solving and communication skills.</li>
+    </ul>
+  </div>
+
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <strong>Online Reading Platform</strong> — Developed a web-based platform for online reading and book management, improving user engagement and accessibility.  
+      <em>Technologies used:</em> HTML, CSS, JavaScript, React
+    </li>
+    <li>
+      <strong>Mental Health Care App</strong> — Created a mobile app focusing on mental wellness, providing resources and tracking tools for users.  
+      <em>Technologies used:</em> Flutter, Firebase, REST APIs
+    </li>
+    <li>
+      <strong>JavaFX Expense Tracker</strong> — Developed a personal finance tool using object-oriented programming; enhanced problem-solving and time management skills.  
+      <em>Technologies used:</em> Java, JavaFX
+    </li>
+    <li>
+      <strong>Python Matrix-Based Vigenère Decryption</strong> — Built a cryptographic decryption tool using dynamic programming, demonstrating logical thinking and adaptability.  
+      <em>Technologies used:</em> Python, Cryptography algorithms
+    </li>
+    <li>
+      <strong>Wireshark Network Traffic Analysis</strong> — Analyzed real-world network traffic data to identify performance issues, applying critical thinking and detail orientation.  
+      <em>Technologies used:</em> Wireshark, Network protocols
+    </li>
+    <li>
+      <strong>Python Paper Summarizer (LLM)</strong> — Created a research paper summarizer using natural language processing and large language models, showcasing innovation.  
+      <em>Technologies used:</em> Python, NLP, Transformers
+    </li>
+    <li>
+      <strong>SQL Disaster Relief Database</strong> — Designed and implemented a database system using DDL/DML commands to manage disaster-related data, improving analytical skills.  
+      <em>Technologies used:</em> SQL, Relational Databases
+    </li>
+    <li>
+      <strong>Mousetrap Car Project</strong> — Led a team to build a high-speed mousetrap-powered car, demonstrating planning, leadership, and collaborative problem-solving.  
+      <em>Skills:</em> Teamwork, Mechanical design, Project management
+    </li>
+    <li>
+      <strong>Interface Model Building</strong> — Created a real-time flowrate estimation interface emphasizing data visualization and technical reporting.  
+      <em>Technologies used:</em> MATLAB, Data visualization tools
+    </li>
+    <li>
+      <strong>Capstone Project: Bio-Inspired Solution to Hypotension</strong> — Proposed and researched a novel approach to hypotension using mollusk circulatory system principles, highlighting research and teamwork.  
+      <em>Skills:</em> Research, Team collaboration, Biomedical concepts
+    </li>
+  </ul>
+</section>
 
   <section id="leadership-involvement">
-    <h2>Leadership & Involvement</h2>
-    <ul>
-      <li>President, Computer Science Club, Texas Tech University (2024-2025)</li>
-      <li>Volunteer Tutor for underprivileged students in math and computer science (2022-present)</li>
-      <li>Organized tech workshops and coding bootcamps for peers and local community</li>
-      <li>Member, Women in Technology organization, Texas Tech University</li>
-    </ul>
-  </section>
+  <h2>Leadership & Involvement</h2>
+  <h3>Texas Tech University</h3>
+  <ul>
+    <li><strong>Title XI Ambassador, Title IX Office</strong> — <em>March 2023 – May 2025</em></li>
+    <li><strong>Technical Assistant, Big 12 LGBTQIA & Allies Summit</strong> — <em>April 2023</em></li>
+    <li><strong>Cultural Ambassador, International Cultural Center</strong> — <em>March 2023 – May 2025</em></li>
+    <li><strong>Invited Guest Speaker, Roundtable Conference</strong> — <em>September 2022</em></li>
+    <li><strong>President and Involvement Ambassador, Student Involvement Office</strong> — <em>May 2022 – May 2025</em></li>
+  </ul>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Programming Languages: Python, Java, SQL, JavaScript, C++</li>
-      <li>Web Technologies: HTML, CSS, PHP, React, Node.js</li>
-      <li>Tools & Platforms: Git, GitHub, AWS, Docker, Microsoft Office, Adobe Creative Suite</li>
-      <li>Languages Spoken: English (Fluent), Hindi, Sindhi, Marathi, German (Conversational), Spanish (Basic)</li>
-    </ul>
-  </section>
+  <h3>Other</h3>
+  <ul>
+    <li><strong>Program Assistant, Robin Hood Army (non-profit organization), India</strong> — <em>2018 – 2021</em></li>
+  </ul>
+</section>
 
-  <section id="certificates-trainings">
-    <h2>Certificates & Trainings</h2>
-    <ul>
-      <li>Corporate Finance Foundations (Coursera)</li>
-      <li>Data Science Essentials (Microsoft)</li>
-      <li>Google Data Analytics Professional Certificate</li>
-      <li>Certified Associate in Python Programming</li>
-      <li>Registered Candidate for CFA Level 1</li>
-    </ul>
-  </section>
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li><strong>Languages:</strong> Hindi (native), Sindhi (native), Marathi (native), English (fluent), German (intermediate), Spanish (beginner), ASL (beginner)</li>
+    <li><strong>Technical:</strong> Python, Data Science, Data Structures and Algorithms, Assembly, C, Web Analytics, Search Engine Optimization, Web Accessibility, Dreamweaver, 3D Printing, Operating Systems, Object Oriented Programming, Quantum Computing</li>
+  </ul>
+</section>
 
-  <section id="honors-awards">
-    <h2>Honors & Awards</h2>
-    <ul>
-      <li>Dean’s List, Texas Tech University (2022, 2023, 2024)</li>
-      <li>Recipient, Tech Innovator Award, Computer Science Department (2024)</li>
-      <li>Volunteer Service Award, Local Community (2023)</li>
-      <li>Certificate of Excellence in Leadership, Women in Technology (2023)</li>
-    </ul>
-  </section>
+<section id="certificates-trainings">
+  <h2>Certificates & Trainings</h2>
+  <ul>
+    <li><strong>Critical Infrastructure Security Training</strong> — <em>May 2023</em></li>
+    <li><strong>Wellness Coach</strong> — <em>August 2019</em></li>
+  </ul>
+</section>
 
-  <section id="references">
-    <h2>References</h2>
-    <ul>
-      <li><strong>Dr. Jane Smith</strong><br>Professor, Computer Science Department, Texas Tech University<br>Email: jane.smith@ttu.edu<br>Phone: (806) 555-1234</li>
-      <li><strong>Mr. John Doe</strong><br>Supervisor, CECE Department, Texas Tech University<br>Email: john.doe@ttu.edu<br>Phone: (806) 555-5678</li>
-      <li><strong>Ms. Emily Johnson</strong><br>Manager, WATER Center, Texas Tech University<br>Email: emily.johnson@ttu.edu<br>Phone: (806) 555-9012</li>
-    </ul>
-  </section>
+<section id="honors-awards">
+  <h2>Honors & Awards</h2>
+  <ul>
+    <li><strong>Presidential Merit Scholarship, Texas Tech University</strong> — <em>2021-22, 2022-23, 2023-24, 2024-25</em></li>
+    <li><strong>Dean’s List, Texas Tech University</strong> — <em>Spring 2022, Fall 2022, Spring 2023, Fall 2023, Spring 2025</em></li>
+  </ul>
+</section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a></p>
-    <p>Phone: (806) 283-8872</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank">linkedin.com/in/khushinankani</a></p>
-    <p>Feel free to reach out for collaboration or opportunities!</p>
-  </section>
+<section id="references">
+  <h2>References</h2>
+  <ul>
+    <li><strong>Dr. Amrika Deonarine</strong> — Direct Supervisor at Texas Tech University CECE Department<br>
+      <a href="mailto:amrika.deonarine@ttu.edu">amrika.deonarine@ttu.edu</a></li>
+    <li><strong>Stephanie LaMarr</strong> — Direct Supervisor at Texas Tech University Student Involvement Office<br>
+      <a href="mailto:stephanie.lamarr@ttu.edu">stephanie.lamarr@ttu.edu</a></li>
+  </ul>
+</section>
+
+
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a>
+      <p>Phone: (806) 283-8872</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank" rel="noopener">khushinankani</a>/</p>
+      <p>Feel free to reach out for collaboration or opportunities!/</p>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Khushi Nankani</p>
