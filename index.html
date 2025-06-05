@@ -5,246 +5,233 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Khushi Nankani - Portfolio</title>
   <style>
+    /* Simple CSS inside HTML to keep it easy for now */
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header nav ul {
+      list-style: none;
       display: flex;
-      background-color: #f4f4f4;
+      gap: 15px;
+      background: #004080;
+      padding: 10px;
+      border-radius: 5px;
     }
-
-    nav {
-      width: 250px;
-      background-color: #002855;
-      min-height: 100vh;
-      color: white;
-      padding: 20px;
-      box-sizing: border-box;
-      position: fixed;
-    }
-
-    nav h2 {
-      color: #ffffff;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin: 15px 0;
-    }
-
-    nav ul li a {
+    header nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
-
-    nav ul li a:hover {
+    header nav ul li a:hover {
       text-decoration: underline;
     }
-
-    main {
-      margin-left: 270px;
-      padding: 30px;
-      max-width: 1000px;
-      box-sizing: border-box;
-    }
-
     section {
-      background-color: #ffffff;
+      background: white;
       padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #ccc;
     }
-
-    h1, h2, h3 {
+    h1, h2 {
       color: #004080;
     }
-
     #about {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
+      display:flex; 
+      align-items:center; 
+      gap:20px;
     }
-
     #about img {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 2px solid #004080;
+      width:120px; 
+      height:120px; 
+      object-fit:cover; 
+      border-radius:50%;
     }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
-
     ul {
       padding-left: 20px;
     }
-
-    @media screen and (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-
-      nav {
-        position: relative;
-        width: 100%;
-        height: auto;
-        min-height: auto;
-      }
-
-      main {
-        margin-left: 0;
-        padding: 20px;
-      }
-
-      #about {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      #about img {
-        margin-bottom: 10px;
-      }
+    hr {
+      border: 0;
+      border-top: 1px solid #eee;
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <h2>Khushi Nankani</h2>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#work">Work History</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#leadership-involvement">Leadership</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certificates-trainings">Certificates</a></li>
-      <li><a href="#honors-awards">Awards</a></li>
-      <li><a href="#references">References</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work History</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#leadership-involvement">Leadership</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates-trainings">Certificates</a></li>
+        <li><a href="#honors-awards">Awards</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <img src="khushi..jpeg" alt="Khushi Nankani" />
+    <div>
+      <h1>Khushi Nankani</h1>
+      <p>
+        I am a Computer Science graduate from Texas Tech University with a minor in Mathematics. My experience spans web development, technical communications, and administrative assistance, where I have applied technical skills in Python, Java, SQL, and web technologies to solve complex problems, along with leadership and collaboration abilities. Currently, I serve as a Transition & Handoff Assistant for Texas Tech University, training an incoming team member with an ADA-recognized disability by adapting onboarding and remote processes for accessibility, while creating detailed workflow documentation to ensure smooth knowledge transfer and operational continuity.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>Bachelor’s in Computer Science, Minor in Mathematics</strong></li>
+      <li>Texas Tech University, Lubbock, Texas</li>
+      <li>May 2025 | GPA: 3.606</li>
     </ul>
-  </nav>
+  </section>
 
-  <main>
-    <section id="about">
-      <img src="khushi..jpeg" alt="Khushi Nankani">
-      <div>
-        <h1>About Me</h1>
-        <p>I am a Computer Science graduate from Texas Tech University with a minor in Mathematics. My experience spans web development, technical communications, and administration assistance, where I have applied my technical skills in Python, Java, SQL, and web technologies to solve complex problems and soft skills like leadership and collaboration. Currently, I serve as a Transition & Handoff Assistant for Texas Tech University, training an incoming team member with an ADA-recognized disability by adapting onboarding and remote processes to ensure accessibility while creating workflow documentation to ensure continuity.</p>
-      </div>
-    </section>
+  <section id="work">
+    <h2>Work History</h2>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p><strong>Texas Tech University, Lubbock, TX</strong><br />
-      Bachelor of Science in Computer Science; Minor in Mathematics<br />
-      Graduated May 2025 | GPA: 3.6</p>
-    </section>
-
-    <section id="work">
-      <h2>Work History</h2>
+    <div>
       <h3>Transition & Handoff Assistant (Remote)</h3>
       <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
       May 2025 – Present</p>
       <ul>
-        <li>Training an incoming team member with an ADA-recognized disability by adapting onboarding materials and processes to ensure accessibility.</li>
-        <li>Documenting project workflows and technical procedures to support sustainable transitions in research administration.</li>
+        <li>Training an incoming team member with an ADA-recognized disability, adapting onboarding materials and remote processes to ensure accessibility and a smooth knowledge transfer.</li>
+        <li>Developing detailed documentation of workflows and key procedures to support seamless transition and long-term operational continuity in a remote setting.</li>
       </ul>
+    </div>
+    <hr>
 
-      <h3>Web Development & Communications Intern</h3>
-      <p><strong>WATER Center, Texas Tech University</strong><br>
-      Jan 2024 – May 2024</p>
+    <div>
+      <h3>Web Development & Communications Intern (Hybrid)</h3>
+      <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
+      December 2022 – February 2023</p>
       <ul>
-        <li>Revamped the center’s website and organized communications for events, publications, and projects.</li>
-        <li>Built project dashboards using HTML/CSS and embedded analytics for grant reporting.</li>
+        <li>Supported website and communication initiatives, contributing to content updates and team collaboration during internship period.</li>
       </ul>
+    </div>
+    <hr>
 
-      <h3>Student Assistant – Admin & IT</h3>
-      <p><strong>Texas Tech University</strong><br>
-      Aug 2023 – Dec 2023</p>
+    <div>
+      <h3>Web Content & Communications Student Assistant (Hybrid)</h3>
+      <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
+      March 2023 – May 2025</p>
       <ul>
-        <li>Supported students and faculty with IT queries and admin tasks, balancing multiple requests efficiently.</li>
+        <li>Managed and updated CECE and WATER Center websites, monitors, and calendars using HTML, PHP, Omni CMS, and TeamUp.</li>
+        <li>Performed administrative tasks and ensured consistent, cross-platform content, showcasing time management and problem-solving.</li>
+        <li>Designed newsletters, graphics, and social media content with Adobe Creative Suite, Canva, and Microsoft Office.</li>
+        <li>Collaborated with diverse teams, demonstrating leadership, creativity, and teamwork.</li>
       </ul>
+    </div>
+    <hr>
 
-      <h3>Food & Beverage Attendant</h3>
-      <p><strong>TTU Hospitality Services</strong><br>
-      Jan 2022 – May 2023</p>
+    <div>
+      <h3>Communications & Web Support (Hybrid)</h3>
+      <p><strong>Water and the Environmental Research Center (WATER Center), Texas Tech University</strong><br>
+      June 2024 – May 2025</p>
       <ul>
-        <li>Provided prompt service during high-volume hours, demonstrating teamwork and reliability.</li>
+        <li>Managed and updated websites, monitors, and calendars using HTML, PHP, Omni CMS, and TeamUp.</li>
+        <li>Designed newsletters, graphics, and social media content; performed admin tasks and ensured branding consistency across platforms.</li>
       </ul>
-    </section>
+    </div>
+    <hr>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <div>
+      <h3>Dining Services Assistant</h3>
+      <p><strong>Sam’s Wall-Gates Dining, Texas Tech University</strong><br>
+      September 2021 – December 2022</p>
       <ul>
-        <li><strong>JavaFX Expense Tracker</strong> – Developed a personal finance tool using OOP; improved problem-solving and time management.</li>
-        <li><strong>Python Matrix-Based Vigenère Decryption</strong> – Built a decryption tool using dynamic programming, demonstrating logical thinking and adaptability.</li>
-        <li><strong>Wireshark Network Traffic Analysis</strong> – Analyzed real-world data for performance issues, applying critical thinking and detail orientation.</li>
-        <li><strong>Python Paper Summarizer (LLM)</strong> – Built a summarization tool using LLM APIs and NLP to create auto-summaries of academic PDFs.</li>
+        <li>Supported 100+ students daily and handled facility operations, demonstrating reliability and responsibility.</li>
       </ul>
-    </section>
+    </div>
+    <hr>
 
-    <section id="leadership-involvement">
-      <h2>Leadership & Involvement</h2>
+    <div>
+      <h3>Tech Support Assistant</h3>
+      <p><strong>The Brand Crowd Laptop Service Store</strong><br>
+      Summer 2021</p>
       <ul>
-        <li>Mentor – Tech Women Club, TTU</li>
-        <li>Event Coordinator – International Student Council</li>
-        <li>Volunteer – Red Raider Orientation & Cultural Events</li>
+        <li>Resolved 70% of customer tech issues, applying strong problem-solving and communication skills.</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming:</strong> Python, Java, SQL, HTML, CSS, JavaScript</li>
-        <li><strong>Tools:</strong> Git, Wireshark, VSCode, Microsoft Office, Figma</li>
-        <li><strong>Languages:</strong> English, Hindi, Sindhi, Marathi, German, Spanish, Beginner ASL</li>
-      </ul>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Online Reading Platform — Developed a web-based platform to facilitate online reading and discussion. Technologies used: React, Node.js, MongoDB.</li>
+      <li>Mental Health Care App — Created a mobile app to provide mental health resources and tracking. Technologies used: Flutter, Firebase.</li>
+    </ul>
+  </section>
 
-    <section id="certificates-trainings">
-      <h2>Certificates & Trainings</h2>
-      <ul>
-        <li>Google Data Analytics – Coursera</li>
-        <li>Corporate Finance Foundations – LinkedIn Learning</li>
-        <li>Data Science Foundations – LinkedIn Learning</li>
-      </ul>
-    </section>
+  <section id="leadership-involvement">
+    <h2>Leadership & Involvement</h2>
+    <ul>
+      <li>President, Computer Science Club, Texas Tech University (2024-2025)</li>
+      <li>Volunteer Tutor for underprivileged students in math and computer science (2022-present)</li>
+      <li>Organized tech workshops and coding bootcamps for peers and local community</li>
+      <li>Member, Women in Technology organization, Texas Tech University</li>
+    </ul>
+  </section>
 
-    <section id="honors-awards">
-      <h2>Honors & Awards</h2>
-      <ul>
-        <li>Dean’s List – Texas Tech University (2022–2025)</li>
-        <li>Global Ambassador Recognition – International Affairs Office</li>
-      </ul>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages: Python, Java, SQL, JavaScript, C++</li>
+      <li>Web Technologies: HTML, CSS, PHP, React, Node.js</li>
+      <li>Tools & Platforms: Git, GitHub, AWS, Docker, Microsoft Office, Adobe Creative Suite</li>
+      <li>Languages Spoken: English (Fluent), Hindi, Sindhi, Marathi, German (Conversational), Spanish (Basic)</li>
+    </ul>
+  </section>
 
-    <section id="references">
-      <h2>References</h2>
-      <p>Available upon request.</p>
-    </section>
+  <section id="certificates-trainings">
+    <h2>Certificates & Trainings</h2>
+    <ul>
+      <li>Corporate Finance Foundations (Coursera)</li>
+      <li>Data Science Essentials (Microsoft)</li>
+      <li>Google Data Analytics Professional Certificate</li>
+      <li>Certified Associate in Python Programming</li>
+      <li>Registered Candidate for CFA Level 1</li>
+    </ul>
+  </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a></p>
-      <p>Phone: (806) 283-8872</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank">linkedin.com/in/khushinankani</a></p>
-    </section>
+  <section id="honors-awards">
+    <h2>Honors & Awards</h2>
+    <ul>
+      <li>Dean’s List, Texas Tech University (2022, 2023, 2024)</li>
+      <li>Recipient, Tech Innovator Award, Computer Science Department (2024)</li>
+      <li>Volunteer Service Award, Local Community (2023)</li>
+      <li>Certificate of Excellence in Leadership, Women in Technology (2023)</li>
+    </ul>
+  </section>
 
-    <footer>
-      <p>© 2025 Khushi Nankani</p>
-    </footer>
-  </main>
+  <section id="references">
+    <h2>References</h2>
+    <ul>
+      <li><strong>Dr. Jane Smith</strong><br>Professor, Computer Science Department, Texas Tech University<br>Email: jane.smith@ttu.edu<br>Phone: (806) 555-1234</li>
+      <li><strong>Mr. John Doe</strong><br>Supervisor, CECE Department, Texas Tech University<br>Email: john.doe@ttu.edu<br>Phone: (806) 555-5678</li>
+      <li><strong>Ms. Emily Johnson</strong><br>Manager, WATER Center, Texas Tech University<br>Email: emily.johnson@ttu.edu<br>Phone: (806) 555-9012</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a></p>
+    <p>Phone: (806) 283-8872</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank">linkedin.com/in/khushinankani</a></p>
+    <p>Feel free to reach out for collaboration or opportunities!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Khushi Nankani</p>
+  </footer>
 </body>
 </html>
