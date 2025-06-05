@@ -5,40 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Khushi Nankani - Portfolio</title>
   <style>
-    /* Simple CSS inside HTML to keep it easy for now */
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 20px auto;
+      max-width: 900px;
       background: #f9f9f9;
       color: #333;
+      line-height: 1.5;
+      padding: 0 15px;
+    }
+    header {
+      margin-bottom: 30px;
     }
     header nav ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       gap: 15px;
       background: #004080;
-      padding: 10px;
-      border-radius: 5px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      justify-content: center;
     }
     header nav ul li a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
     }
-    header nav ul li a:hover {
-      text-decoration: underline;
+    header nav ul li a:hover,
+    header nav ul li a:focus {
+      background-color: #0066cc;
+      outline: none;
     }
     section {
       background: white;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 5px #ccc;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     }
     h1, h2 {
       color: #004080;
+      margin-bottom: 15px;
+    }
+    h3 {
+      margin-top: 0;
+      color: #0059b3;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 0;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #004080;
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+    /* About Section */
+    #about {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    #about img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 64, 128, 0.2);
+      flex-shrink: 0;
+    }
+    /* Contact Section */
+    #contact {
+      background: #e6f0ff;
+      box-shadow: 0 0 12px rgba(0, 64, 128, 0.2);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    #contact p {
+      font-size: 1.1em;
+      margin: 12px 0;
+    }
+    #contact p:last-child {
+      font-style: italic;
+      color: #333;
+      margin-top: 25px;
+    }
+    /* Horizontal rule style */
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 25px 0;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      #about {
+        flex-direction: column;
+        text-align: center;
+      }
+      #about img {
+        margin: 0 auto;
+      }
     }
   </style>
+</head>
+<body>
+
 <header>
   <nav>
     <ul>
@@ -56,147 +144,138 @@
   </nav>
 </header>
 
-<section id="about" style="display:flex; align-items:center; gap:20px;">
-  <img src="khushi..jpeg" alt="Khushi Nankani" 
-       style="width:120px; height:120px; object-fit:cover; border-radius:50%;" />
+<main>
+
+<section id="about">
+  <img src="khushi.jpeg" alt="Khushi Nankani Photo" />
   <div>
     <h1>Khushi Nankani</h1>
     <p>
-    I am a Computer Science graduate from Texas Tech University with a minor in Mathematics. My experience spans web development, technical communications, and administrative assistance, where I have applied technical skills in Python, Java, SQL, and web technologies to solve complex problems, along with leadership and collaboration abilities. Currently, I serve as a Transition & Handoff Assistant for Texas Tech University, training an incoming team member with an ADA-recognized disability by adapting onboarding and remote processes for accessibility, while creating detailed workflow documentation to ensure smooth knowledge transfer and operational continuity.
+      I am a Computer Science graduate from Texas Tech University with a minor in Mathematics. 
+      My experience spans web development, technical communications, and administrative assistance, 
+      where I have applied technical skills in Python, Java, SQL, and web technologies to solve complex problems, 
+      along with leadership and collaboration abilities. Currently, I serve as a Transition & Handoff Assistant 
+      for Texas Tech University, training an incoming team member with an ADA-recognized disability by adapting onboarding 
+      and remote processes for accessibility, while creating detailed workflow documentation to ensure smooth knowledge transfer 
+      and operational continuity.
     </p>
   </div>
 </section>
 
-<section id="contact-snippet" style="margin-top:10px; font-size:0.9em; color:#555;">
-  <p>Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a> | Phone: (806) 283-8872 | LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank" rel="noopener">khushinankani</a></p>
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li>Bachelor’s in Computer Science, Minor in Mathematics</li>
+    <li>Texas Tech University, Lubbock, Texas</li>
+    <li>Graduated May 2025 | GPA: 3.606</li>
+  </ul>
 </section>
-
-
-    <section id="education">
-      <h2>Education</h2>
-      <ul style="list-style-type: none; padding-left: 0;">
-        <li>Bachelor’s in Computer Science, Minor in Mathematics</li>
-        <li>Texas Tech University, Lubbock, Texas</li>
-        <li>May 2025 | GPA: 3.606</li>
-      </ul>
-    </section>
 
 <section id="work">
   <h2>Work History</h2>
 
-  <div>
+  <article>
     <h3>Transition & Handoff Assistant (Remote)</h3>
     <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
-    May 2025 – Present</p>
+      May 2025 – Present</p>
     <ul>
-      <li>Training an incoming team member with an ADA-recognized disability, adapting onboarding materials and remote processes to ensure accessibility and a smooth knowledge transfer.</li>
+      <li>Training an incoming team member with an ADA-recognized disability, adapting onboarding materials and remote processes to ensure accessibility and smooth knowledge transfer.</li>
       <li>Developing detailed documentation of workflows and key procedures to support seamless transition and long-term operational continuity in a remote setting.</li>
     </ul>
-  </div>
+  </article>
   <hr>
 
-  <div>
+  <article>
     <h3>Web Development & Communications Intern (Hybrid)</h3>
     <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
-    December 2022 – February 2023</p>
+      December 2022 – February 2023</p>
     <ul>
       <li>Supported website and communication initiatives, contributing to content updates and team collaboration during internship period.</li>
     </ul>
-  </div>
+  </article>
   <hr>
 
-  <div>
+  <article>
     <h3>Web Content & Communications Student Assistant (Hybrid)</h3>
     <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
-    March 2023 – May 2025</p>
+      March 2023 – May 2025</p>
     <ul>
       <li>Managed and updated CECE and WATER Center websites, monitors, and calendars using HTML, PHP, Omni CMS, and TeamUp.</li>
       <li>Performed administrative tasks and ensured consistent, cross-platform content, showcasing time management and problem-solving.</li>
       <li>Designed newsletters, graphics, and social media content with Adobe Creative Suite, Canva, and Microsoft Office.</li>
       <li>Collaborated with diverse teams, demonstrating leadership, creativity, and teamwork.</li>
     </ul>
-  </div>
+  </article>
   <hr>
 
-  <div>
+  <article>
     <h3>Communications & Web Support (Hybrid)</h3>
     <p><strong>Water and the Environmental Research Center (WATER Center), Texas Tech University</strong><br>
-    June 2024 – May 2025</p>
+      June 2024 – May 2025</p>
     <ul>
       <li>Managed and updated websites, monitors, and calendars using HTML, PHP, Omni CMS, and TeamUp.</li>
       <li>Designed newsletters, graphics, and social media content; performed admin tasks and ensured branding consistency across platforms.</li>
     </ul>
-  </div>
+  </article>
   <hr>
 
-  <div>
+  <article>
     <h3>Dining Services Assistant</h3>
     <p><strong>Sam’s Wall-Gates Dining, Texas Tech University</strong><br>
-    September 2021 – December 2022</p>
+      September 2021 – December 2022</p>
     <ul>
       <li>Supported 100+ students daily and handled facility operations, demonstrating reliability and responsibility.</li>
     </ul>
-  </div>
+  </article>
   <hr>
 
-  <div>
+  <article>
     <h3>Tech Support Assistant</h3>
     <p><strong>The Brand Crowd Laptop Service Store</strong><br>
-    Summer 2021</p>
+      Summer 2021</p>
     <ul>
       <li>Resolved 70% of customer tech issues, applying strong problem-solving and communication skills.</li>
     </ul>
-  </div>
-
+  </article>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
   <ul>
-    <li>
-      <strong>Online Reading Platform</strong> — Developed a web-based platform for online reading and book management, improving user engagement and accessibility.  
+    <li><strong>Online Reading Platform</strong> — Developed a web-based platform for online reading and book management, improving user engagement and accessibility.  
       <em>Technologies used:</em> HTML, CSS, JavaScript, React
     </li>
-    <li>
-      <strong>Mental Health Care App</strong> — Created a mobile app focusing on mental wellness, providing resources and tracking tools for users.  
+    <li><strong>Mental Health Care App</strong> — Created a mobile app focusing on mental wellness, providing resources and tracking tools for users.  
       <em>Technologies used:</em> Flutter, Firebase, REST APIs
     </li>
-    <li>
-      <strong>JavaFX Expense Tracker</strong> — Developed a personal finance tool using object-oriented programming; enhanced problem-solving and time management skills.  
+    <li><strong>JavaFX Expense Tracker</strong> — Developed a personal finance tool using object-oriented programming; enhanced problem-solving and time management skills.  
       <em>Technologies used:</em> Java, JavaFX
     </li>
-    <li>
-      <strong>Python Matrix-Based Vigenère Decryption</strong> — Built a cryptographic decryption tool using dynamic programming, demonstrating logical thinking and adaptability.  
+    <li><strong>Python Matrix-Based Vigenère Decryption</strong> — Built a cryptographic decryption tool using dynamic programming, demonstrating logical thinking and adaptability.  
       <em>Technologies used:</em> Python, Cryptography algorithms
     </li>
-    <li>
-      <strong>Wireshark Network Traffic Analysis</strong> — Analyzed real-world network traffic data to identify performance issues, applying critical thinking and detail orientation.  
+    <li><strong>Wireshark Network Traffic Analysis</strong> — Analyzed real-world network traffic data to identify performance issues, applying critical thinking and detail orientation.  
       <em>Technologies used:</em> Wireshark, Network protocols
     </li>
-    <li>
-      <strong>Python Paper Summarizer (LLM)</strong> — Created a research paper summarizer using natural language processing and large language models, showcasing innovation.  
+    <li><strong>Python Paper Summarizer (LLM)</strong> — Created a research paper summarizer using natural language processing and large language models, showcasing innovation.  
       <em>Technologies used:</em> Python, NLP, Transformers
     </li>
-    <li>
-      <strong>SQL Disaster Relief Database</strong> — Designed and implemented a database system using DDL/DML commands to manage disaster-related data, improving analytical skills.  
+    <li><strong>SQL Disaster Relief Database</strong> — Designed and implemented a database system using DDL/DML commands to manage disaster-related data, improving analytical skills.  
       <em>Technologies used:</em> SQL, Relational Databases
     </li>
-    <li>
-      <strong>Mousetrap Car Project</strong> — Led a team to build a high-speed mousetrap-powered car, demonstrating planning, leadership, and collaborative problem-solving.  
+    <li><strong>Mousetrap Car Project</strong> — Led a team to build a high-speed mousetrap-powered car, demonstrating planning, leadership, and collaborative problem-solving.  
       <em>Skills:</em> Teamwork, Mechanical design, Project management
     </li>
-    <li>
-      <strong>Interface Model Building</strong> — Created a real-time flowrate estimation interface emphasizing data visualization and technical reporting.  
+    <li><strong>Interface Model Building</strong> — Created a real-time flowrate estimation interface emphasizing data visualization and technical reporting.  
       <em>Technologies used:</em> MATLAB, Data visualization tools
     </li>
-    <li>
-      <strong>Capstone Project: Bio-Inspired Solution to Hypotension</strong> — Proposed and researched a novel approach to hypotension using mollusk circulatory system principles, highlighting research and teamwork.  
+    <li><strong>Capstone Project: Bio-Inspired Solution to Hypotension</strong> — Proposed and researched a novel approach to hypotension using mollusk circulatory system principles, highlighting research and teamwork.  
       <em>Skills:</em> Research, Team collaboration, Biomedical concepts
     </li>
   </ul>
 </section>
 
-  <section id="leadership-involvement">
+<section id="leadership-involvement">
   <h2>Leadership & Involvement</h2>
   <h3>Texas Tech University</h3>
   <ul>
@@ -217,7 +296,7 @@
   <h2>Skills</h2>
   <ul>
     <li><strong>Languages:</strong> Hindi (native), Sindhi (native), Marathi (native), English (fluent), German (intermediate), Spanish (beginner), ASL (beginner)</li>
-    <li><strong>Technical:</strong> Python, Data Science, Data Structures and Algorithms, Assembly, C, Web Analytics, Search Engine Optimization, Web Accessibility, Dreamweaver, 3D Printing, Operating Systems, Object Oriented Programming, Quantum Computing</li>
+    <li><strong>Technical:</strong> Python, Data Science, Data Structures and Algorithms, Assembly, C, Web Analytics, SEO, Web Accessibility, Dreamweaver, 3D Printing, Operating Systems, Object-Oriented Programming, Quantum Computing</li>
   </ul>
 </section>
 
@@ -240,26 +319,32 @@
 <section id="references">
   <h2>References</h2>
   <ul>
-    <li><strong>Dr. Amrika Deonarine</strong> — Direct Supervisor at Texas Tech University CECE Department<br>
-      <a href="mailto:amrika.deonarine@ttu.edu">amrika.deonarine@ttu.edu</a></li>
-    <li><strong>Stephanie LaMarr</strong> — Direct Supervisor at Texas Tech University Student Involvement Office<br>
-      <a href="mailto:stephanie.lamarr@ttu.edu">stephanie.lamarr@ttu.edu</a></li>
+    <li>
+      <strong>Dr. Amrika Deonarine</strong> — Direct Supervisor at Texas Tech University CECE Department<br>
+      <a href="mailto:amrika.deonarine@ttu.edu">amrika.deonarine@ttu.edu</a>
+    </li>
+    <li>
+      <strong>Stephanie LaMarr</strong> — Direct Supervisor at Texas Tech University Student Involvement Office<br>
+      <a href="mailto:stephanie.lamarr@ttu.edu">stephanie.lamarr@ttu.edu</a>
+    </li>
   </ul>
 </section>
 
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>📧 Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a></p>
+  <p>📞 Phone: <a href="tel:+18062838872">(806) 283-8872</a></p>
+  <p>🔗 LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank" rel="noopener noreferrer">linkedin.com/in/khushinankani</a></p>
+  <p>Feel free to reach out for collaboration, networking, or new opportunities!</p>
+</section>
 
+</main>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a>/</p>
-      <p>Phone: (806) 283-8872</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank" rel="noopener">khushinankani</a>/</p>
-      <p>Feel free to reach out for collaboration or opportunities!/</p>
-    </section>
-  </main>
+<footer>
+  <p style="text-align: center; color: #666; font-size: 0.9em; margin-bottom: 20px;">
+    © 2025 Khushi Nankani
+  </p>
+</footer>
 
-  <footer>
-    <p>© 2025 Khushi Nankani</p>
-  </footer>
 </body>
 </html>
