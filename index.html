@@ -3,85 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Khushi Nankani Portfolio</title>
+  <title>Khushi Nankani - Portfolio</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f5f8fc;
-      color: #333;
-    }
-
-    .container {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
-      min-height: 100vh;
+      background-color: #f4f4f4;
     }
 
     nav {
       width: 250px;
-      background: #003366;
+      background-color: #002855;
+      min-height: 100vh;
       color: white;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow-y: auto;
-      padding: 30px 15px;
+      padding: 20px;
+      box-sizing: border-box;
+      position: fixed;
     }
 
     nav h2 {
-      font-size: 1.3em;
-      margin-bottom: 20px;
+      color: #ffffff;
       text-align: center;
+      margin-bottom: 30px;
     }
 
     nav ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
     }
 
     nav ul li {
-      margin: 12px 0;
+      margin: 15px 0;
     }
 
     nav ul li a {
       color: white;
       text-decoration: none;
-      font-weight: 500;
-      display: block;
-      padding: 8px 12px;
-      border-radius: 6px;
-      transition: background 0.2s;
+      font-weight: bold;
     }
 
     nav ul li a:hover {
-      background: #0059b3;
+      text-decoration: underline;
     }
 
     main {
-      flex-grow: 1;
-      padding: 40px;
-      background: #f5f8fc;
-      overflow-y: auto;
+      margin-left: 270px;
+      padding: 30px;
+      max-width: 1000px;
+      box-sizing: border-box;
     }
 
     section {
-      background: white;
-      padding: 25px 30px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     h1, h2, h3 {
-      color: #003366;
-      margin-top: 0;
+      color: #004080;
     }
 
     #about {
       display: flex;
-      gap: 25px;
-      align-items: center;
-      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 20px;
     }
 
     #about img {
@@ -89,58 +77,49 @@
       height: 140px;
       object-fit: cover;
       border-radius: 50%;
-      box-shadow: 0 0 8px rgba(0, 64, 128, 0.2);
-      flex-shrink: 0;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: #004080;
-    }
-
-    #contact {
-      background: #e6f0ff;
-      text-align: center;
-    }
-
-    #contact p {
-      font-size: 1.1em;
-      margin: 10px 0;
+      border: 2px solid #004080;
     }
 
     footer {
       text-align: center;
-      font-size: 0.9em;
       padding: 20px;
+      font-size: 0.9em;
       color: #666;
     }
 
-    @media (max-width: 768px) {
-      .container {
+    ul {
+      padding-left: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
         flex-direction: column;
       }
+
       nav {
+        position: relative;
         width: 100%;
         height: auto;
-        position: relative;
+        min-height: auto;
       }
+
       main {
+        margin-left: 0;
         padding: 20px;
+      }
+
+      #about {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #about img {
+        margin-bottom: 10px;
       }
     }
   </style>
 </head>
 <body>
-
-<div class="container">
   <nav>
     <h2>Khushi Nankani</h2>
     <ul>
@@ -159,102 +138,128 @@
 
   <main>
     <section id="about">
-      <img src="https://via.placeholder.com/140" alt="Khushi Nankani" />
+      <img src="khushi..jpeg" alt="Khushi Nankani">
       <div>
         <h1>About Me</h1>
         <p>
-          I am a Computer Science graduate from Texas Tech University with a minor in Mathematics.
-          My experience spans web development, technical communications, and administrative assistance,
-          where I apply technical skills like Python, Java, SQL, and web tech to solve problems. I currently
-          serve as a Transition & Handoff Assistant training a team member with an ADA-recognized disability.
+          I am a Computer Science graduate from Texas Tech University with a minor in Mathematics. My experience spans web development, technical communications, and administrative assistance, where I have applied technical skills in Python, Java, SQL, and web technologies to solve complex problems, along with leadership and collaboration abilities.
+        </p>
+        <p>
+          Currently, I serve as a Transition & Handoff Assistant at Texas Tech University, training an incoming team member with an ADA-recognized disability by adapting onboarding and remote processes for accessibility while creating workflow documentation to ensure smooth knowledge transfer and continuity.
         </p>
       </div>
     </section>
 
     <section id="education">
       <h2>Education</h2>
-      <ul>
-        <li>Bachelor’s in Computer Science, Minor in Mathematics</li>
-        <li>Texas Tech University, Lubbock, TX</li>
-        <li>Graduated May 2025 | GPA: 3.606</li>
-      </ul>
+      <p><strong>Texas Tech University, Lubbock, TX</strong><br />
+        Bachelor of Science in Computer Science; Minor in Mathematics<br />
+        Graduated May 2025 | GPA: 3.6
+      </p>
     </section>
 
     <section id="work">
       <h2>Work History</h2>
-      <ul>
-        <li><strong>Transition & Handoff Assistant</strong> - CECE, Texas Tech University (May 2025 – Present)</li>
-        <li><strong>Web Dev & Communications Intern</strong> - WATER Center, Texas Tech (Aug 2024 – Present)</li>
-        <li><strong>Food Service Worker</strong> - Hospitality Services (Jan 2024 – May 2024)</li>
-        <li><strong>Tech Support</strong> - Student Affairs IT (Aug 2023 – Dec 2023)</li>
-      </ul>
+      <div>
+        <h3>Transition & Handoff Assistant (Remote)</h3>
+        <p><strong>Department of Civil, Environmental, & Construction Engineering (CECE), Texas Tech University</strong><br>
+        May 2025 – Present</p>
+        <ul>
+          <li>Training an incoming team member with an ADA-recognized disability</li>
+          <li>Creating documentation and adapting processes for accessibility</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Web Development & Communications Intern</h3>
+        <p><strong>WATER Center, Texas Tech University</strong><br>
+        Jan 2024 – Apr 2024</p>
+        <ul>
+          <li>Developed and managed content for research-focused website</li>
+          <li>Designed infographics and outreach materials for various stakeholders</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Student Assistant - Tech Support & Office Admin</h3>
+        <p><strong>Department of Plant & Soil Science, Texas Tech University</strong><br>
+        Aug 2022 – May 2023</p>
+        <ul>
+          <li>Assisted with software, printing, and day-to-day tech support</li>
+          <li>Organized mail, scanned documents, and handled scheduling tasks</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Food Service Worker</h3>
+        <p><strong>Hospitality Services, Texas Tech University</strong><br>
+        Aug 2021 – May 2022</p>
+        <ul>
+          <li>Maintained cleanliness, customer interaction, and timely food prep</li>
+        </ul>
+      </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <ul>
-        <li>JavaFX Expense Tracker - Personal finance tool using OOP</li>
-        <li>Python Matrix-Based Vigenère Decryption - Decryption with dynamic programming</li>
-        <li>Wireshark Network Traffic Analysis - Troubleshooting real-world data</li>
-        <li>Python Paper Summarizer (LLM)</li>
+        <li><strong>JavaFX Expense Tracker</strong> – Developed a personal finance tool using OOP; improved problem-solving and time management.</li>
+        <li><strong>Python Matrix-Based Vigenère Decryption</strong> – Built a decryption tool using dynamic programming, demonstrating logical thinking and adaptability.</li>
+        <li><strong>Wireshark Network Traffic Analysis</strong> – Analyzed real-world data for performance issues, applying critical thinking and detail orientation.</li>
+        <li><strong>Python Paper Summarizer (LLM)</strong> – Automated summarization of academic papers using NLP models and prompt engineering.</li>
       </ul>
     </section>
 
     <section id="leadership-involvement">
       <h2>Leadership & Involvement</h2>
       <ul>
-        <li>Member, Society of Women Engineers</li>
-        <li>Member, Association for Computing Machinery</li>
-        <li>Participant, TTU Hackathons</li>
+        <li>Vice President, Association of Indian Students, Texas Tech University</li>
+        <li>Public Relations Chair, Society of Women Engineers (SWE), Texas Tech University</li>
       </ul>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
       <ul>
-        <li>Python, Java, SQL, JavaScript, HTML/CSS</li>
-        <li>Wireshark, Bash, Git/GitHub, LaTeX</li>
-        <li>Languages: English, Hindi, Marathi, Sindhi, Spanish, German, beginner ASL</li>
+        <li><strong>Technical:</strong> Python, Java, SQL, HTML, CSS, JavaScript, Git, Linux, LaTeX</li>
+        <li><strong>Tools:</strong> Wireshark, Adobe Suite, Microsoft Office, WordPress</li>
+        <li><strong>Languages:</strong> English, Hindi, Marathi, Sindhi, Spanish, German, Beginner ASL</li>
       </ul>
     </section>
 
     <section id="certificates-trainings">
       <h2>Certificates & Trainings</h2>
       <ul>
-        <li>Corporate Finance Foundations</li>
-        <li>Data Science and Google Data Courses</li>
-        <li>AWS Academy Graduate</li>
+        <li>Corporate Finance Foundations (LinkedIn Learning)</li>
+        <li>Data Science Math Skills (Coursera)</li>
+        <li>Google Data Analytics (Coursera)</li>
       </ul>
     </section>
 
     <section id="honors-awards">
       <h2>Honors & Awards</h2>
       <ul>
-        <li>Dean's List</li>
-        <li>Scholarship Recipient</li>
+        <li>Dean’s List: Spring 2022, Spring 2023</li>
+        <li>3rd Place – Cultural Performance at TTU India Night</li>
       </ul>
     </section>
 
     <section id="references">
       <h2>References</h2>
       <ul>
-        <li>Available upon request</li>
+        <li><strong>Dr. Patricia Solís</strong>, Director, WATER Center, TTU – <a href="mailto:patricia.solis@ttu.edu">patricia.solis@ttu.edu</a></li>
+        <li><strong>Dr. Stefan Hurlebaus</strong>, CECE Department Head, TTU – <a href="mailto:stefan.hurlebaus@ttu.edu">stefan.hurlebaus@ttu.edu</a></li>
       </ul>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p>📧 <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a></p>
-      <p>📞 <a href="tel:+18062838872">(806) 283-8872</a></p>
-      <p>🔗 <a href="https://linkedin.com/in/khushinankani" target="_blank">linkedin.com/in/khushinankani</a></p>
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a></p>
+      <p>Phone: (806) 283-8872</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank">linkedin.com/in/khushinankani</a></p>
       <p>Feel free to reach out for collaboration or opportunities!</p>
     </section>
 
     <footer>
-      &copy; 2025 Khushi Nankani
+      <p>© 2025 Khushi Nankani</p>
     </footer>
   </main>
-</div>
-
 </body>
 </html>
