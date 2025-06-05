@@ -5,33 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Khushi Nankani - Portfolio</title>
   <style>
-    /* Simple CSS inside HTML to keep it easy for now */
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
       background: #f9f9f9;
       color: #333;
+      display: flex;           /* Make body a flex container */
+      min-height: 100vh;
     }
-    header nav ul {
-      list-style: none;
-      display: flex;
-      gap: 15px;
+    nav {
       background: #004080;
-      padding: 10px;
-      border-radius: 5px;
+      width: 200px;
+      min-height: 100vh;
+      padding: 20px 10px;
+      box-sizing: border-box;
+      position: fixed;         /* Fix nav on the left */
+      top: 0;
+      left: 0;
+      overflow-y: auto;
     }
-    header nav ul li a {
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: block;
+    }
+    nav ul li {
+      margin-bottom: 15px;
+    }
+    nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
     }
-    header nav ul li a:hover {
-      text-decoration: underline;
+    nav ul li a:hover {
+      background-color: #002f5a;
+      text-decoration: none;
+    }
+    main {
+      margin-left: 220px;    /* Leave space for fixed nav */
+      padding: 20px;
+      flex: 1;
+      max-width: 900px;
     }
     section {
       background: white;
       padding: 20px;
-      margin-top: 20px;
+      margin-bottom: 20px;
       border-radius: 5px;
       box-shadow: 0 0 5px #ccc;
     }
@@ -39,7 +63,8 @@
       color: #004080;
     }
   </style>
-<header>
+</head>
+<body>
   <nav>
     <ul>
       <li><a href="#about">About Me</a></li>
@@ -54,23 +79,22 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-</header>
 
-<section id="about" style="display:flex; align-items:center; gap:20px;">
-  <img src="khushi..jpeg" alt="Khushi Nankani" 
-       style="width:120px; height:120px; object-fit:cover; border-radius:50%;" />
-  <div>
-    <h1>Khushi Nankani</h1>
-    <p>
-    I am a Computer Science graduate from Texas Tech University with a minor in Mathematics. My experience spans web development, technical communications, and administrative assistance, where I have applied technical skills in Python, Java, SQL, and web technologies to solve complex problems, along with leadership and collaboration abilities. Currently, I serve as a Transition & Handoff Assistant for Texas Tech University, training an incoming team member with an ADA-recognized disability by adapting onboarding and remote processes for accessibility, while creating detailed workflow documentation to ensure smooth knowledge transfer and operational continuity.
-    </p>
-  </div>
-</section>
+  <main>
+    <section id="about" style="display:flex; align-items:center; gap:20px;">
+      <img src="khushi..jpeg" alt="Khushi Nankani" 
+           style="width:120px; height:120px; object-fit:cover; border-radius:50%;" />
+      <div>
+        <h1>Khushi Nankani</h1>
+        <p>
+          I am a Computer Science graduate from Texas Tech University with a minor in Mathematics. My experience spans web development, technical communications, and administrative assistance, where I have applied technical skills in Python, Java, SQL, and web technologies to solve complex problems, along with leadership and collaboration abilities. Currently, I serve as a Transition & Handoff Assistant for Texas Tech University, training an incoming team member with an ADA-recognized disability by adapting onboarding and remote processes for accessibility, while creating detailed workflow documentation to ensure smooth knowledge transfer and operational continuity.
+        </p>
+      </div>
+    </section>
 
-<section id="contact-snippet" style="margin-top:10px; font-size:0.9em; color:#555;">
-  <p>Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a> | Phone: (806) 283-8872 | LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank" rel="noopener">khushinankani</a></p>
-</section>
-
+    <section id="contact-snippet" style="margin-top:10px; font-size:0.9em; color:#555;">
+      <p>Email: <a href="mailto:khushinankani23@gmail.com">khushinankani23@gmail.com</a> | Phone: (806) 283-8872 | LinkedIn: <a href="https://linkedin.com/in/khushinankani" target="_blank" rel="noopener">khushinankani</a></p>
+    </section>
 
     <section id="education">
       <h2>Education</h2>
